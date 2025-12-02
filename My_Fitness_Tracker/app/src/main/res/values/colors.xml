@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FF808080</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="primary">#4361EE</color>
+    <color name="secondary">#3A0CA3</color>
+    <color name="blue">#FF2196F3</color>
+    <color name="green">#FF4CAF50</color>
+    <color name="primaryColor">#4CAF50</color>
+    <color name="secondaryTextColor">#757575</color>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="runningColor">#2196F3</color>
+    <color name="cyclingColor">#4CAF50</color>
+    <color name="swimmingColor">#00BCD4</color>
+    <color name="weightliftingColor">#F44336</color>
+    <color name="yogaColor">#9C27B0</color>
+
+
+        <!-- Existing colors -->
+        <color name="green_500">#4CAF50</color>
+        <color name="green_200">#A5D6A7</color>
+    <color name="cycling_path">#2196F3</color>
+
+        <color name="gray_500">#9E9E9E</color>
+
+
+</resources>

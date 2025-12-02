@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base color -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F8F9FA"/>
+        </shape>
+    </item>
+
+    <!-- Wavy gradient overlay -->
+    <item>
+        <bitmap
+            android:src="@drawable/wave_pattern"
+            android:tileMode="repeat"
+            android:gravity="bottom"/>
+    </item>
+</layer-list>

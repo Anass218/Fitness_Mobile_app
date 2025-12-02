@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E4C6"
+    android:padding="0dp">
+
+    <!-- App Bar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#961AC5"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/back"
+        app:title="Fitness Tracker"
+        app:titleTextColor="@color/white" />
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#303F9F"
+        android:text="Welcome, User!"
+        android:textColor="#80FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:text="FITNESS TRACKER"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeMessage"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/appSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#303F9F"
+        android:gravity="center"
+        android:text="Select your activity"
+        android:textColor="#80FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appTitle"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Activity Buttons Card - Now properly constrained -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="#1E222B"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/footerText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="wrap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appSubtitle"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Running Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRunning"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#1E222B"
+                android:drawableStart="@android:drawable/ic_menu_directions"
+                android:drawablePadding="8dp"
+                android:paddingStart="16dp"
+                android:text="Running"
+                android:textColor="#4CAF50"
+                android:textSize="16sp"
+                app:cornerRadius="8dp"
+                app:strokeColor="#4CAF50"
+                app:strokeWidth="1dp" />
+
+            <!-- Cycling Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCycling"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#1E222B"
+                android:drawableStart="@android:drawable/ic_menu_directions"
+                android:drawablePadding="8dp"
+                android:paddingStart="16dp"
+                android:text="Cycling"
+                android:textColor="#2196F3"
+                android:textSize="16sp"
+                app:cornerRadius="8dp"
+                app:strokeColor="#2196F3"
+                app:strokeWidth="1dp" />
+
+            <!-- Weightlifting Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnWeightlifting"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#1E222B"
+                android:drawableStart="@android:drawable/ic_menu_edit"
+                android:drawablePadding="8dp"
+                android:paddingStart="16dp"
+                android:text="Weightlifting"
+                android:textColor="#FF9800"
+                android:textSize="16sp"
+                app:cornerRadius="8dp"
+                app:strokeColor="#FF9800"
+                app:strokeWidth="1dp" />
+
+            <!-- Swimming Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSwimming"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#1E222B"
+                android:drawableStart="@android:drawable/ic_menu_directions"
+                android:drawablePadding="8dp"
+                android:paddingStart="16dp"
+                android:text="Swimming"
+                android:textColor="#00BCD4"
+                android:textSize="16sp"
+                app:cornerRadius="8dp"
+                app:strokeColor="#00BCD4"
+                app:strokeWidth="1dp" />
+
+            <!-- Yoga Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnYoga"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#1E222B"
+                android:drawableStart="@android:drawable/ic_menu_agenda"
+                android:drawablePadding="8dp"
+                android:paddingStart="16dp"
+                android:text="Yoga"
+                android:textColor="#9C27B0"
+                android:textSize="16sp"
+                app:cornerRadius="8dp"
+                app:strokeColor="#9C27B0"
+                app:strokeWidth="1dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Footer - Now with proper ID and constraints -->
+    <TextView
+        android:id="@+id/footerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Track your fitness journey"
+        android:textColor="#607D8B"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
